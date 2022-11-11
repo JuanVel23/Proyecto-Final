@@ -1,13 +1,21 @@
 package co.edu.unbosque.view;
 
+import co.edu.unbosque.controller.Controller;
+
 public class View {
 
 	private VentanaInicial vi;
+	private VentanaInicioSesion vis;
 	
-	public View() {
+	public View(Controller control) {
 		vi = new VentanaInicial();
+		vis = new VentanaInicioSesion();
+		
+		vi.getIniciar().addActionListener(control);
 	}
 
+	
+	
 	public VentanaInicial getVi() {
 		return vi;
 	}
@@ -15,6 +23,15 @@ public class View {
 	public void setVi(VentanaInicial vi) {
 		this.vi = vi;
 	}
+
+	public VentanaInicioSesion getVis() {
+		return vis;
+	}
+
+	public void setVis(VentanaInicioSesion vis) {
+		this.vis = vis;
+	}
+	
 	
 	
 }

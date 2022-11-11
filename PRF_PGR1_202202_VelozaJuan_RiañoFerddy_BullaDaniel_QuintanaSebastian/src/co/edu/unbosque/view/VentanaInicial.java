@@ -24,6 +24,7 @@ public class VentanaInicial  extends JFrame{
 		setLocationRelativeTo(null);
 		setLayout(null);
 		
+		
 		iniciar = new JButton();
 		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/2.png"));
 		ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(260, 50, Image.SCALE_DEFAULT));
@@ -46,5 +47,32 @@ public class VentanaInicial  extends JFrame{
 		add(iniciar);
 		add(registrarse);
 		add(fondo);
+		
 	}
+
+	public JButton getIniciar() {
+		return iniciar;
+	}
+
+	public void setIniciar(JButton iniciar) {
+		this.iniciar = iniciar;
+	}
+
+	public JButton getRegistrarse() {
+		return registrarse;
+	}
+
+	public void setRegistrarse(JButton registrarse) {
+		this.registrarse = registrarse;
+	}
+
+	public JLabel getFondo() {
+		return fondo;
+	}
+
+	public void setFondo(JLabel fondo) {
+		this.fondo = fondo;
+	}
+	
+	
 }
