@@ -12,6 +12,8 @@ public class View {
 		vis = new VentanaInicioSesion();
 		
 		vi.getIniciar().addActionListener(control);
+		vi.getRegistrarse().addActionListener(control);
+		vis.getIniciar().addActionListener(control);
 	}
 
 	
