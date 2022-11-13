@@ -7,7 +7,9 @@ import javax.swing.*;
 
 public class VentanaInicioSesion extends JFrame{
 
+	private JLabel insUsuario;
 	private JTextField usuario;
+	private JLabel insContraseña;
 	private JTextField contraseña;
 	private JButton iniciar;
 	public static final String 	INICIAR = "iniciar";
@@ -20,11 +22,14 @@ public class VentanaInicioSesion extends JFrame{
 		setLocationRelativeTo(null);
 		setLayout(null);
 		
-		
+		insUsuario = new JLabel("Ingresa tu usuario: ");
+		insUsuario.setBounds(250, 100, 200, 35);
 		usuario = new JTextField();
 		usuario.setBounds(250, 135, 200, 35);
 		usuario.setForeground(Color.black);
 		usuario.setBackground(Color.white);
+		insContraseña = new JLabel("Ingresa tu contraseña: ");
+		insContraseña.setBounds(250, 165, 200, 35);
 		contraseña = new JTextField();
 		contraseña.setBounds(250, 200, 200, 35);
 		contraseña.setForeground(Color.black);
@@ -36,9 +41,12 @@ public class VentanaInicioSesion extends JFrame{
 		iniciar.setActionCommand(INICIAR);
 		iniciar.setBounds(220, 280, 260, 50);
 		
+		add(insContraseña);
+		add(insUsuario);
 		add(contraseña);
 		add(usuario);
 		add(iniciar);
+		
 	}
 
 	public JTextField getUsuario() {
