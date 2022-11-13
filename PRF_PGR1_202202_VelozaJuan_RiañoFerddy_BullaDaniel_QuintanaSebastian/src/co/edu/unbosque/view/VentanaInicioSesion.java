@@ -12,6 +12,7 @@ public class VentanaInicioSesion extends JFrame{
 	private JLabel insContraseña;
 	private JTextField contraseña;
 	private JButton iniciar;
+	private JLabel fondo;
 	public static final String 	INICIAR = "iniciar";
 	
 	public VentanaInicioSesion() {
@@ -23,29 +24,35 @@ public class VentanaInicioSesion extends JFrame{
 		setLayout(null);
 		
 		insUsuario = new JLabel("Ingresa tu usuario: ");
-		insUsuario.setBounds(250, 100, 200, 35);
+		insUsuario.setBounds(250, 115, 200, 35);
 		usuario = new JTextField();
-		usuario.setBounds(250, 135, 200, 35);
+		usuario.setBounds(250, 150, 200, 35);
 		usuario.setForeground(Color.black);
 		usuario.setBackground(Color.white);
 		insContraseña = new JLabel("Ingresa tu contraseña: ");
-		insContraseña.setBounds(250, 165, 200, 35);
+		insContraseña.setBounds(250, 180, 200, 35);
 		contraseña = new JTextField();
-		contraseña.setBounds(250, 200, 200, 35);
+		contraseña.setBounds(250, 215, 200, 35);
 		contraseña.setForeground(Color.black);
 		contraseña.setBackground(Color.white);
 		iniciar = new JButton();
-		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/2.png"));
+		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/3.png"));
 		ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(260, 50, Image.SCALE_DEFAULT));
 		iniciar.setIcon(icono1);
 		iniciar.setActionCommand(INICIAR);
 		iniciar.setBounds(220, 280, 260, 50);
+		fondo = new JLabel();
+		ImageIcon imag3 = new ImageIcon(getClass().getResource("/Imagenes/Fondo2.png"));
+		ImageIcon icono3 = new ImageIcon(imag3.getImage().getScaledInstance(700, 400, Image.SCALE_DEFAULT));
+		fondo.setIcon(icono3);
+		fondo.setBounds(0, 0, 700, 400);
 		
 		add(insContraseña);
 		add(insUsuario);
 		add(contraseña);
 		add(usuario);
 		add(iniciar);
+		add(fondo);
 		
 	}
 

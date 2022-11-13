@@ -43,7 +43,6 @@ public class VentanaInicial  extends JFrame{
 		fondo.setIcon(icono3);
 		fondo.setBounds(0, 0, 700, 400);
 		
-	
 		add(iniciar);
 		add(registrarse);
 		add(fondo);
