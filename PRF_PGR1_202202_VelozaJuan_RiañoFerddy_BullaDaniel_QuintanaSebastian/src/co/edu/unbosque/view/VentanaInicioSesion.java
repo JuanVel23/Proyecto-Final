@@ -7,6 +7,7 @@ import javax.swing.*;
 
 public class VentanaInicioSesion extends JFrame{
 
+	private static final long serialVersionUID = 1L;
 	private JLabel insUsuario;
 	private JTextField usuario;
 	private JLabel insContraseña;

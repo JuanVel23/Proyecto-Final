@@ -18,10 +18,16 @@ public class Controller implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		if(e.getActionCommand().equals(gui.getVi().INICIAR));
+		if(e.getActionCommand().equals(gui.getVi().INICIAR)) {
 			gui.getVi().setVisible(false);
 			gui.getVis().setVisible(true);
+		}
+		
+		if(e.getActionCommand().equals(gui.getVi().REGISTRAR)) {
+			gui.getVi().setVisible(false);
+			gui.getVeg().setVisible(true);
+		}
 	}
-	
+		
 	
 }
