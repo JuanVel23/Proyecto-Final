@@ -2,13 +2,15 @@ package co.edu.unbosque.view;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Image;
 
 import javax.swing.*;
 
 public class VentanaGénero extends JFrame{
 	
 	private JButton botcontinuar, botmasculino, botfemenino;
-	private JLabel titulo;
+	private JLabel fondo;
+	
 	public static final String 	CONTINUAR = "Continuar";
 	public static final String 	HOMBRE = "Hombre";
 	public static final String 	MUJER = "Mujer";
@@ -21,25 +23,30 @@ public class VentanaGénero extends JFrame{
 		setLocationRelativeTo(null);
 		setLayout(null);
 		
-		titulo = new JLabel("¿Qué eres?");
-		titulo.setForeground(Color.red);
-		Font font = new Font("Times New Roman", 1, 25);
-		titulo.setFont(font);
-		titulo.setBounds(80, 10, 150, 25);
 		botmasculino = new JButton("Hombre");
+		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/BotonHombre.png"));
+		ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
+		botmasculino.setIcon(icono1);
 		botmasculino.setActionCommand(HOMBRE);
-		botmasculino.setBounds(40, 80, 90, 20);
+		botmasculino.setBounds(50, 90, 80, 40);
 		botcontinuar = new JButton("Continuar");
 		botcontinuar.setActionCommand(CONTINUAR);
-		botcontinuar.setBounds(95, 175, 90, 20);
+		botcontinuar.setBounds(95, 175, 90, 30);
 		botfemenino = new JButton("Mujer");
+		ImageIcon imag2 = new ImageIcon(getClass().getResource("/Imagenes/BotonMujer.png"));
+		ImageIcon icono2 = new ImageIcon(imag2.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
+		botfemenino.setIcon(icono2);
 		botfemenino.setActionCommand(MUJER);
-		botfemenino.setBounds(160, 80, 90, 20);
+		botfemenino.setBounds(160, 90, 80, 40);
+		fondo = new JLabel();
+		ImageIcon imag3 = new ImageIcon(getClass().getResource("/Imagenes/FondoGenero.png"));
+		ImageIcon icono3 = new ImageIcon(imag3.getImage().getScaledInstance(285, 210, Image.SCALE_DEFAULT));
+		fondo.setIcon(icono3);
+		fondo.setBounds(0, 0, 285, 210);
 		
-		add(titulo);
-		add(botcontinuar);
 		add(botmasculino);
 		add(botfemenino);
+		add(fondo);
 	
 		
 	}
