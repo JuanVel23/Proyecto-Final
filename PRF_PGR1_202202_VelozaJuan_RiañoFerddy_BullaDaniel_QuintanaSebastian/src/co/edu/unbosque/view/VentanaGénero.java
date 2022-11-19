@@ -8,10 +8,10 @@ import javax.swing.*;
 
 public class VentanaGénero extends JFrame{
 	
-	private JButton botcontinuar, botmasculino, botfemenino;
+	public static final long serialVersionUID = 1L;
+	private JButton  botmasculino, botfemenino;
 	private JLabel fondo;
 	
-	public static final String 	CONTINUAR = "Continuar";
 	public static final String 	HOMBRE = "Hombre";
 	public static final String 	MUJER = "Mujer";
 	
@@ -29,9 +29,6 @@ public class VentanaGénero extends JFrame{
 		botmasculino.setIcon(icono1);
 		botmasculino.setActionCommand(HOMBRE);
 		botmasculino.setBounds(50, 90, 80, 40);
-		botcontinuar = new JButton("Continuar");
-		botcontinuar.setActionCommand(CONTINUAR);
-		botcontinuar.setBounds(95, 175, 90, 30);
 		botfemenino = new JButton("Mujer");
 		ImageIcon imag2 = new ImageIcon(getClass().getResource("/Imagenes/BotonMujer.png"));
 		ImageIcon icono2 = new ImageIcon(imag2.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
@@ -49,14 +46,6 @@ public class VentanaGénero extends JFrame{
 		add(fondo);
 	
 		
-	}
-
-	public JButton getBotcontinuar() {
-		return botcontinuar;
-	}
-
-	public void setBotcontinuar(JButton botcontinuar) {
-		this.botcontinuar = botcontinuar;
 	}
 
 	public JButton getBotmasculino() {
