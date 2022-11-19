@@ -8,10 +8,10 @@ import javax.swing.*;
 
 public class VentanaGénero extends JFrame{
 	
-	private JButton botcontinuar, botmasculino, botfemenino;
+	public static final long serialVersionUID = 1L;
+	private JButton  botmasculino, botfemenino;
 	private JLabel fondo;
 	
-	public static final String 	CONTINUAR = "Continuar";
 	public static final String 	HOMBRE = "Hombre";
 	public static final String 	MUJER = "Mujer";
 	
@@ -24,18 +24,16 @@ public class VentanaGénero extends JFrame{
 		setLayout(null);
 		
 		botmasculino = new JButton("Hombre");
-		//ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/BotonHombre.png"));
-		//ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
-		//botmasculino.setIcon(icono1);
+		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/BotonHombre.png"));
+		ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
+		botmasculino.setIcon(icono1);
 		botmasculino.setActionCommand(HOMBRE);
 		botmasculino.setBounds(180, 100, 80, 40);
-		botcontinuar = new JButton("Continuar");
-		botcontinuar.setActionCommand(CONTINUAR);
-		botcontinuar.setBounds(95, 175, 90, 30);
+		botmasculino.setBounds(50, 90, 80, 40);
 		botfemenino = new JButton("Mujer");
-		//ImageIcon imag2 = new ImageIcon(getClass().getResource("/Imagenes/BotonMujer.png"));
-		//ImageIcon icono2 = new ImageIcon(imag2.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
-		//botfemenino.setIcon(icono2);
+		ImageIcon imag2 = new ImageIcon(getClass().getResource("/Imagenes/BotonMujer.png"));
+		ImageIcon icono2 = new ImageIcon(imag2.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
+		botfemenino.setIcon(icono2);
 		botfemenino.setActionCommand(MUJER);
 		botfemenino.setBounds(180, 100, 80, 40);
 		fondo = new JLabel();
@@ -46,17 +44,9 @@ public class VentanaGénero extends JFrame{
 		
 		add(botmasculino);
 		add(botfemenino);
-		//add(fondo);
+		add(fondo);
 	
 		
-	}
-
-	public JButton getBotcontinuar() {
-		return botcontinuar;
-	}
-
-	public void setBotcontinuar(JButton botcontinuar) {
-		this.botcontinuar = botcontinuar;
 	}
 
 	public JButton getBotmasculino() {

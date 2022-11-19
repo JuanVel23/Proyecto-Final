@@ -13,6 +13,7 @@ public class Controller implements ActionListener{
 		gui = new View(this);
 		gui.getVi().setVisible(true);
 		gui.getVis().setVisible(false);
+		
 	}
 
 	@Override
@@ -27,6 +28,16 @@ public class Controller implements ActionListener{
 	            gui.getVi().setVisible(false);
 	            gui.getVeg().setVisible(true);
 	        }
+	        
+	        if(e.getActionCommand().equals(gui.getVeg().HOMBRE)) {
+	        	gui.getVeg().setVisible(false);
+	        	gui.getVresgh().setVisible(true);
+	        }else if(e.getActionCommand().equals(gui.getVeg().MUJER)) {
+	        	gui.getVeg().setVisible(false);
+	        	gui.getVresgm().setVisible(true);
+	        }
+	        
+	       
 	}
 	
 	
