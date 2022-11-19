@@ -16,7 +16,7 @@ public class VentanaGénero extends JFrame{
 	public static final String 	MUJER = "Mujer";
 	
 	public VentanaGénero() {
-		setSize(300,250);
+		setSize(715, 440);
 		setResizable(false);
 		setTitle("Género");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -24,29 +24,29 @@ public class VentanaGénero extends JFrame{
 		setLayout(null);
 		
 		botmasculino = new JButton("Hombre");
-		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/BotonHombre.png"));
-		ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
-		botmasculino.setIcon(icono1);
+		//ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/BotonHombre.png"));
+		//ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
+		//botmasculino.setIcon(icono1);
 		botmasculino.setActionCommand(HOMBRE);
-		botmasculino.setBounds(50, 90, 80, 40);
+		botmasculino.setBounds(180, 100, 80, 40);
 		botcontinuar = new JButton("Continuar");
 		botcontinuar.setActionCommand(CONTINUAR);
 		botcontinuar.setBounds(95, 175, 90, 30);
 		botfemenino = new JButton("Mujer");
-		ImageIcon imag2 = new ImageIcon(getClass().getResource("/Imagenes/BotonMujer.png"));
-		ImageIcon icono2 = new ImageIcon(imag2.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
-		botfemenino.setIcon(icono2);
+		//ImageIcon imag2 = new ImageIcon(getClass().getResource("/Imagenes/BotonMujer.png"));
+		//ImageIcon icono2 = new ImageIcon(imag2.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
+		//botfemenino.setIcon(icono2);
 		botfemenino.setActionCommand(MUJER);
-		botfemenino.setBounds(160, 90, 80, 40);
+		botfemenino.setBounds(180, 100, 80, 40);
 		fondo = new JLabel();
 		ImageIcon imag3 = new ImageIcon(getClass().getResource("/Imagenes/FondoGenero.png"));
-		ImageIcon icono3 = new ImageIcon(imag3.getImage().getScaledInstance(285, 210, Image.SCALE_DEFAULT));
+		ImageIcon icono3 = new ImageIcon(imag3.getImage().getScaledInstance(700, 400, Image.SCALE_DEFAULT));
 		fondo.setIcon(icono3);
-		fondo.setBounds(0, 0, 285, 210);
+		fondo.setBounds(0, 0, 700, 400);
 		
 		add(botmasculino);
 		add(botfemenino);
-		add(fondo);
+		//add(fondo);
 	
 		
 	}
