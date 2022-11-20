@@ -37,13 +37,13 @@ public class VentanaInicioSesion extends JFrame{
 		contraseña.setForeground(Color.black);
 		contraseña.setBackground(Color.white);
 		iniciar = new JButton();
-		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/3.png"));
-		ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(260, 50, Image.SCALE_DEFAULT));
+		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/BotonIngresar.png"));
+		ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(200, 45, Image.SCALE_DEFAULT));
 		iniciar.setIcon(icono1);
 		iniciar.setActionCommand(INICIAR);
-		iniciar.setBounds(220, 280, 260, 50);
+		iniciar.setBounds(250, 280, 200, 45);
 		fondo = new JLabel();
-		ImageIcon imag3 = new ImageIcon(getClass().getResource("/Imagenes/Fondo2.png"));
+		ImageIcon imag3 = new ImageIcon(getClass().getResource("/Imagenes/FondoInicioSesion.png"));
 		ImageIcon icono3 = new ImageIcon(imag3.getImage().getScaledInstance(700, 400, Image.SCALE_DEFAULT));
 		fondo.setIcon(icono3);
 		fondo.setBounds(0, 0, 700, 400);

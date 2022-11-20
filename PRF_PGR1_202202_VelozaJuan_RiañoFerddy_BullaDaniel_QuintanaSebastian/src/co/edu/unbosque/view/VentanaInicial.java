@@ -26,19 +26,19 @@ public class VentanaInicial  extends JFrame{
 		
 		
 		iniciar = new JButton();
-		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/2.png"));
+		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/BotonIniciarSesion.png"));
 		ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(260, 50, Image.SCALE_DEFAULT));
 		iniciar.setIcon(icono1);
 		iniciar.setActionCommand(INICIAR);
 		iniciar.setBounds(220, 190, 260, 50);
 		registrarse = new JButton();
-		ImageIcon imag2 = new ImageIcon(getClass().getResource("/Imagenes/1.png"));
+		ImageIcon imag2 = new ImageIcon(getClass().getResource("/Imagenes/BotonRegistrarse.png"));
 		ImageIcon icono2 = new ImageIcon(imag2.getImage().getScaledInstance(260, 50, Image.SCALE_DEFAULT));
 		registrarse.setIcon(icono2);
 		registrarse.setActionCommand(REGISTRAR);
 		registrarse.setBounds(220, 260, 260, 50);
 		fondo = new JLabel();
-		ImageIcon imag3 = new ImageIcon(getClass().getResource("/Imagenes/Fondo.png"));
+		ImageIcon imag3 = new ImageIcon(getClass().getResource("/Imagenes/FondoInicial.png"));
 		ImageIcon icono3 = new ImageIcon(imag3.getImage().getScaledInstance(700, 400, Image.SCALE_DEFAULT));
 		fondo.setIcon(icono3);
 		fondo.setBounds(0, 0, 700, 400);
