@@ -21,14 +21,14 @@ public class VentanaRegistroMujer extends JFrame  {
 		setLayout(null);
 
 		fondo = new JLabel();
-		ImageIcon img1 = new ImageIcon(getClass().getResource("/Imagenes/FondoInicioSesion.png"));
+		ImageIcon img1 = new ImageIcon(getClass().getResource("/Imagenes/FondoRegistroMujer.png"));
 		ImageIcon icono1 = new ImageIcon(img1.getImage().getScaledInstance(700, 400, Image.SCALE_DEFAULT));
 		fondo.setIcon(icono1);
 		fondo.setBounds(0,0, 700, 400);
 		txtnombre = new JTextField();
 		txtnombre.setBounds(100, 80, 200, 25);
 		txtcorreo = new JTextField();
-		txtcorreo.setBounds(100, 150, 200, 25);
+		txtcorreo.setBounds(100, 150, 100, 25);
 		txtusuario = new JTextField();
 		txtusuario.setBounds(400, 80, 200, 25);
 		txtcontraseña = new JTextField();
@@ -38,6 +38,9 @@ public class VentanaRegistroMujer extends JFrame  {
 		txtdivorcio = new JTextField();
 		txtdivorcio.setBounds(400, 220 , 200, 25);
 		registrate = new JButton("Registrate");
+		ImageIcon imag2 = new ImageIcon(getClass().getResource("/Imagenes/BotonRegistrate.png"));
+		ImageIcon icono2 = new ImageIcon(imag2.getImage().getScaledInstance(210, 40, Image.SCALE_DEFAULT));
+		registrate.setIcon(icono2);
 		registrate.setActionCommand(REGISTRATE);
 		registrate.setBounds(240, 300, 200, 40);
 
@@ -48,6 +51,7 @@ public class VentanaRegistroMujer extends JFrame  {
 		add(txtaltura);
 		add(txtdivorcio);
 		add(registrate);
+		add(fondo);
 	}
 
 	public JTextField getTxtnombre() {
