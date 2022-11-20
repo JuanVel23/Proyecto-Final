@@ -25,17 +25,16 @@ public class VentanaGénero extends JFrame{
 		
 		botmasculino = new JButton("Hombre");
 		ImageIcon imag1 = new ImageIcon(getClass().getResource("/Imagenes/BotonHombre.png"));
-		ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
+		ImageIcon icono1 = new ImageIcon(imag1.getImage().getScaledInstance(190, 80, Image.SCALE_DEFAULT));
 		botmasculino.setIcon(icono1);
 		botmasculino.setActionCommand(HOMBRE);
-		botmasculino.setBounds(180, 100, 80, 40);
-		botmasculino.setBounds(50, 90, 80, 40);
+		botmasculino.setBounds(160, 155, 180, 80);
 		botfemenino = new JButton("Mujer");
 		ImageIcon imag2 = new ImageIcon(getClass().getResource("/Imagenes/BotonMujer.png"));
-		ImageIcon icono2 = new ImageIcon(imag2.getImage().getScaledInstance(90, 40, Image.SCALE_DEFAULT));
+		ImageIcon icono2 = new ImageIcon(imag2.getImage().getScaledInstance(190, 80, Image.SCALE_DEFAULT));
 		botfemenino.setIcon(icono2);
 		botfemenino.setActionCommand(MUJER);
-		botfemenino.setBounds(180, 100, 80, 40);
+		botfemenino.setBounds(360, 155, 180, 80);
 		fondo = new JLabel();
 		ImageIcon imag3 = new ImageIcon(getClass().getResource("/Imagenes/FondoGenero.png"));
 		ImageIcon icono3 = new ImageIcon(imag3.getImage().getScaledInstance(700, 400, Image.SCALE_DEFAULT));
